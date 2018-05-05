@@ -33,9 +33,9 @@ export default ({ app, router, store, Vue }) => {
       });
   });
 };
-
 ```
 
+NOTE: This front end client code should work with feathers back end code at https://github.com/feathersjs/feathers-chat
 
 # Please ignore bellow instruction
 
