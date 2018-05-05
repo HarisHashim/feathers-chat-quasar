@@ -1,10 +1,10 @@
 # Example Feathers Chat using Quasar and Feathers-Vuex
 
-This is not done yet! At the moment I am putting it in github to trouble shoot why code commented out in src\plugins\routerAuth.js is not working.
+This is not done yet! At the moment I am putting it in github to trouble shoot why code commented out in [src\plugins\routerAuth.js](https://github.com/HarisHashim/feathers-chat-quasar/blob/master/src/plugins/routerAuth.js) is not working.
 
-When that code is used, signing in will cause infinite loop. I.e. route will redirect to chat page but for an unknown reason, a redirect to login page will happen instead. Which start the infinite loop since redirect to login page will redirect to chat page :D
+When that code is used, signing in will cause infinite loop. I.e. route will redirect to chat page but for an unknown reason, a redirect to login page will happen instead. Which start the infinite loop since redirect to login page will redirect to chat page :D . The source code file that redirect after sucesfull login is [src\layouts\default.vue](https://github.com/HarisHashim/feathers-chat-quasar/blob/master/src/layouts/default.vue). The code can be found in watch for user data.
 
-To test this, comment out code that is working and uncomment code that is not working. The code in src\plugins\routerAuth.js should be as follows:
+To test this, comment out code that is working and uncomment code that is not working. The code in [src\plugins\routerAuth.js](https://github.com/HarisHashim/feathers-chat-quasar/blob/master/src/plugins/routerAuth.js) should be as follows:
 
 ```
 export default ({ app, router, store, Vue }) => {
